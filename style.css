@@ -1,0 +1,79 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+    background: linear-gradient(to right bottom, rgba(162, 198, 156, 0.3), rgba(125, 148, 187, 0.4)),url(./baim-hanif-pYWuOMhtc6k-unsplash.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: aliceblue;
+}
+section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+  color: white;
+  flex-direction: column;
+  gap: 10vh;
+}
+header{
+  display: flex;
+  justify-content: center;
+  height: 20vh;
+  align-items: center;
+ 
+}
+
+.btn {
+    border-radius: 8px;
+    height: 8%;
+    width: 6%;
+    background-color: rgb(177, 17, 156);
+    font-size: 1.2em;
+    color: rgb(170, 193, 213);
+    cursor: pointer; 
+}
+h1 {
+  font-size: 5vw;
+  font-family: 'Dancing Script', cursive;
+  animation: changeColor 8s ease-in infinite;
+}
+
+@keyframes changeColor {
+  0% {
+    color:aliceblue
+  }
+  50% {
+    color: aqua;
+  }
+  80%{
+    color:rgb(202, 12, 47);
+  }
+  100% {
+    color: rgb(14, 190, 61);
+  }
+}
+.academic,th,td, tr {
+  border: 1px solid rgb(223, 208, 208);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+  border-collapse: collapse;
+}
+
+th {
+  font-size: 1.8vw;
+  text-transform: uppercase;
+  font-family: cursive;
+  color: rgb(19, 184, 115);
+  font-style: italic;
+  padding: 0.2rem 0.4rem;
+}
+td, tr {
+  text-align: center;
+  font-size: 1.5vw;
+}
+.errorMessage {
+  font-style: italic;
+  color: rgb(182, 18, 18);
+}
